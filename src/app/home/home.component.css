@@ -1,7 +1,3 @@
-
-/* ********************************************************************** */
-
-
 .hero-bord{
     margin: 20px 0px;
     display: flex;
@@ -35,7 +31,7 @@
 }
 
 .card_bord .card{
-    margin-left: 2px;
+    margin-left: 3px;
     background: #fff;
     box-shadow: 0 3px 9px 0 rgba(169,184,200,.15);
     border-radius: 2px;
