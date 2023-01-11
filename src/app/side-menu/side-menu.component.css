@@ -1,0 +1,57 @@
+body{
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.Menu .logo {
+    padding: 20px 15px;
+}
+
+.Menu .logo img{
+    width: 200px;
+}
+.Menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    background: rgb(254, 254, 254);
+    box-shadow: 0px 0px 20px rgba(107, 107, 107, 0.060);
+    z-index: 10000;
+    overflow-y: auto;
+}
+.Menu .Nav_Bord{
+    position: absolute;
+    top: 20%;
+}
+.Menu .Nav_Bord ul li{
+    font-family: 'Poppins', sans-serif;
+    color: #3d3d3d;
+    list-style: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.Menu .Nav_Bord ul li.active{
+    box-shadow: 0px 5px 10px rgba(107, 107, 107, 0.178);
+    border-radius: 0px 20px 20px 0px;
+    background: #b81c14;
+    color: #fff;
+}
+.Menu .Nav_Bord ul li .i{
+    padding-right: 20px ;
+    font-size: 20px;
+}
+.Menu .Nav_Bord ul li.active:hover{
+    color: #fff;
+}
+.Menu .Nav_Bord ul li:hover{
+    /* background: #b81c14; */
+    color: #b81c14; 
+}
+.Menu .Nav_Bord ul li:first-child{
+    margin-bottom: 50px;
+}

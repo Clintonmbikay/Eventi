@@ -1,0 +1,38 @@
+.card-event{
+    background: #fff;
+    border-radius: 5%;
+    padding: 10px 25px 20px;
+    margin: 15px 40px 15px 0;
+    box-shadow: 0 3px 9px 0 rgba(169,184,200,.15);
+}
+.head_card{
+    display: flex;
+    justify-content: space-between;
+}
+.badge{
+    background: #b81c14;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.badge_desible{
+    background: #686868;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.dots:after{
+    cursor: pointer;
+    color: rgb(197, 197, 197);
+    content: '\2807';
+    font-size: 18px;
+}
+hr{
+    margin: 15px 0 10px;
+    border: none;
+    height: 0.5px;
+    background: #e6e5e5;
+}
+.date_card{
+    font-size: 14px;
+}

@@ -1,0 +1,174 @@
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="entete col-md-6">
+            <div *ngIf="step == 1">
+                <h2>Information sur l'evenement</h2>
+                <p>Renseigner les Informations rélative à votre evenement</p>
+            </div>
+            <div *ngIf="step == 2">
+                <h2>Souscrire à un forfait</h2>
+                <p>Sélectionner un forfait auquel vous voulez souscrire</p>
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="step_1" *ngIf="step == 1">
+                    <div class="row justify-content-start">
+                        <div class="col-md-6">
+                            <input type="text" id="Titre" placeholder="Entrez ici le titre">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" id="Catégorie" placeholder="Entrez ici la catégorie">
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <div class="col-md-6">
+                            <input type="text" id="thème" placeholder="Entrez ici le thème">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="">Date de l'evenement :</label><br>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Mode d'accèes</span><br>
+
+                            <label class="radio-btn" for="gratos">
+                                <input type="radio" name="acces" value="Gratos" id="gratos">
+                                <div class="radiobtn"></div>
+                                Accèes gratuit
+                            </label>
+
+                            <label class="radio-btn" for="payant">
+                                <input type="radio" name="acces" value="payant" id="payant">
+                                <div class="radiobtn"></div>
+                                Accèes payant
+                            </label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Entrez la ville">
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Entrez le Pays">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="">Déscription de l'evenement :</label><br>
+                            <textarea name="" id="" cols="22" rows="5" placeholder="Entrez une brève description de votre evenement"></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Entrez le Pays">
+                            <!-- <label for="">Choisissez la catégorie :</label>
+                            <select name="cars" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select> -->
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end">
+                        <div class="col-md-3 btn-next">
+                            <button (click)="stepperNext()">Suivant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step_2" *ngIf="step == 2"> 
+                    <table>
+                        <tr class="T_head">
+
+                           <td></td>
+                           <td class="Freemium">
+                                 Freemium
+                               <div class="price">0 USD</div> 
+                           </td>
+                           <td class="Premium">
+                                Premium
+                                <div class="price">20 USD</div> 
+                            </td>
+                           <td class="Pro">
+                                Pro
+                                <div class="price">35 USD</div> 
+                            </td>
+                          
+                        </tr>
+                        <tr class="T_body">
+                            <td>Nombre de réservation</td>
+                            <td>2</td>
+                            <td>300</td>
+                            <td>Illimité</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td>Vente Ticket</td>
+                            <td>2</td>
+                            <td>Oui</td>
+                            <td>Oui</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td>Comfirmation par E-mail</td>
+                            <td>2</td>
+                            <td>Oui</td>
+                            <td>Oui</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td>Vérification par QR-Code</td>
+                            <td>Oui</td>
+                            <td>Oui</td>
+                            <td>4</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                         </tr>
+                         <tr class="T_body">
+                            <td class="td_none"></td>
+                            <td>
+                               <input type="radio" checked="checked" name="Price" id="Freemium">
+                               <label for="Freemium">Selectionner</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="Price" id="Premium">
+                                <label for="Premium">Selectionner</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="Price" id="Pro">
+                                <label for="Pro">Selectionner</label>
+                            </td>
+                         </tr>
+                    </table>
+                    <div class="row justify-content-end">
+                        <div class="col-md-3 btn-prev">
+                            <button (click)="stepperPrev()">Précedent</button>
+                        </div>
+                        <div class="col-md-3 btn-next">
+                            <button (click)="stepperNext()">Suivant</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
