@@ -3,7 +3,7 @@
     width: 100%;
     box-shadow: 0 3px 9px 0 rgba(169,184,200,.15);
     border-radius: 2px;
-    padding: 25px 50px;
+    padding: 25px 40px;
     background: white;
 }
 .form input[type="text"],
@@ -95,10 +95,17 @@
      outline-style:none;
      border: 2px solid #e4e4ec;
  }
- /* Next Step Create Event */
+
+ /* **************************Next Step Create Event *******************************************/
 table{
    border-collapse: collapse;
    margin-top: 20px;
+}
+table .T_head td:nth-child(2){
+   border-radius: 5px 0 0 0;
+}
+table .T_head td:last-child{
+   border-radius: 0 5px 0 0;
 }
  .T_head{
       height: 100px;

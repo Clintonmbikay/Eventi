@@ -1,8 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .card_reserved{
     margin: 20px 0;
     width: 100%;
+    height: 65vh;
     box-shadow: 0 3px 9px 0 rgba(169,184,200,.15);
     border-radius: 2px;
-    padding: 25px 50px;
+    padding: 25px 40px;
     background: #fff;
+}
+/* span{
+  
+} */
+
+/* *************************************Liste deroulante *********************************************** */
+.dropdown{
+    width: 12rem;
+    position: relative;
+}
+.dropdown:hover .dropdown-list{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-select{
+    padding: 7px 20px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(107, 107, 107, 0.150);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.dropdown-select span{
+    font-size: 13px;
+}
+.dropdown-list{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(107, 107, 107, 0.150);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.dropdown-list-item{
+    padding: 7px 15px;
+    font-size: 13px;
+}
+.dropdown-list-item:hover{
+    background: rgb(241, 241, 241);
+}
+
+/* ***************************************** Table ********************************************** */
+
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.T_head{
+    height: 40px;
+    background: #b81c14;
+    color: #fff;
+}
+.T_head td{
+    text-align: center;
+    /* width: 20%; */
+}
+.T_head td:first-child{
+    border-radius: 4px 0 0 0;
+}
+.T_head td:last-child{
+    border-radius: 0 4px 0 0;
+}
+.T_body td{
+    border: 1px solid #ececec;
+    text-align: start;
+    padding: 5px 20px;
 }

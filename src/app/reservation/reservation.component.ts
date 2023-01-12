@@ -11,5 +11,5 @@ export class ReservationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  visible :boolean=true;
 }

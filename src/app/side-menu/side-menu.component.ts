@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,12 +9,14 @@ import { Router } from '@angular/router';
 })
 export class SideMenuComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private renderer: Renderer2, @Inject(DOCUMENT) private document:any) { }
 
   ngOnInit(): void {
   }
+  
   goToEventList(){
     this.router.navigate(['/event_List']);
+    // this.status ="actinve"
   }
   goToReservation(){
     this.router.navigate(['/reservation'])

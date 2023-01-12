@@ -7,7 +7,70 @@
     </div>
     <div class="row justify-content-start">
         <div class="card_reserved">
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <span class="select">Choisir l'evenement</span>
+                    <i>*</i>
+                </div>
+                <div class="dropdown-list">
+                    <div class="dropdown-list-item">Concert</div>
+                    <div class="dropdown-list-item">Conférence</div>
+                    <div class="dropdown-list-item">Showcase</div>
+                    <div class="dropdown-list-item">Formation</div>
+                </div>
+            </div>
+            <span class="Message" *ngIf="visible==false">Selectionnez un evenement</span>
+            <table *ngIf="visible==true">
+                <tr class="T_head">
+                   <td>Date</td>
+                   <td class="Freemium">Nom</td>
+                   <td class="Premium">Téléphone</td>
+                   <td class="Pro">Mail</td>
+                </tr>
 
+                <tr class="T_body">
+                    <td>27/04/2022</td>
+                    <td>Clinton Mbikay</td>
+                    <td>+243 844 730 021</td>
+                    <td>Illimité</td>
+                 </tr>
+                 <tr class="T_body">
+                    <td>19/03/2022</td>
+                    <td>2</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                 </tr>
+                 <tr class="T_body">
+                    <td>31/12/2022</td>
+                    <td>2</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                 </tr>
+                 <tr class="T_body">
+                    <td>03/11/2022</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                    <td>4</td>
+                 </tr>
+                 <tr class="T_body">
+                    <td>12/09/2022</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                 </tr>
+                 <tr class="T_body">
+                    <td>24/09/2022</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                 </tr>
+                 <tr class="T_body">
+                    <td>28/10/2022</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                 </tr>
+            </table>
         </div>
     </div>
 </div>
