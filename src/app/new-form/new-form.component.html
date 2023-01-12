@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row justify-content-start">
-        <div class="entete col-md-6">
+        <div class="entete">
             <div *ngIf="step == 1">
                 <h2>Information sur l'evenement</h2>
                 <p>Renseigner les Informations rélative à l'evenement</p>
@@ -10,6 +10,8 @@
                 <p>Sélectionner un forfait auquel vous voulez souscrire</p>
             </div>
         </div>
+    </div>
+    <div class="row justify-content-start">
         <div class="form">
             <form action="">
                 <div class="step_1" *ngIf="step == 1">

@@ -1,0 +1,8 @@
+.card_reserved{
+    margin: 20px 0;
+    width: 100%;
+    box-shadow: 0 3px 9px 0 rgba(169,184,200,.15);
+    border-radius: 2px;
+    padding: 25px 50px;
+    background: #fff;
+}
